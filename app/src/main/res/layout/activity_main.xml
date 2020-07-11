@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/background_color"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpApp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--    android:padding="16dp"-->
+<!--    android:background="@color/blue_background"-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button_choose_image"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/choose_file" />  -->
+    <!---->
+    <!--    <com.example.firebaseupload.views.MyButton-->
+    <!--        android:id="@+id/button_choose_image"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/choose_file" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/caption_text_file_name"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_above="@id/button_upload"-->
+    <!--        android:layout_marginBottom="40dp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:text="@string/caption"-->
+    <!--        android:textColor="@color/caption_text_color"/>-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/image_view"-->
+    <!--        android:contentDescription="@string/description"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/button_choose_image"-->
+
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_above="@+id/caption_text_file_name"-->
+    <!--        android:layout_marginBottom="200dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/image_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+
+    <!--        tools:text="@string/narrate"-->
+    <!--        android:layout_below="@+id/button_choose_image"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="200dp"-->
+    <!--        android:layout_above="@+id/caption_text_file_name"-->
+    <!--        />-->
+    <!--    &lt;!&ndash;    android:visibility="invisible"&ndash;&gt;-->
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progress_bar"-->
+    <!--        style="@style/Widget.AppCompat.ProgressBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true" />-->
+
+    <!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/button_upload"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignParentBottom="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginBottom="16dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="@string/upload" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;    <Button&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:id="@+id/camera_button"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignBaseline="@+id/button_upload"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_alignBottom="@+id/button_upload"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_toEndOf="@+id/button_upload"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:text="@string/camera"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:textSize="16sp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:gravity="center"/>&ndash;&gt;-->
+
+
+    <!--    <Space-->
+    <!--        android:id="@+id/dummy"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:visibility="invisible" />-->
+
+
+    <!--    <com.example.firebaseupload.views.MyButton-->
+    <!--        android:id="@+id/button_upload"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+
+    <!--        android:text="@string/generate_caption"-->
+    <!--         />-->
+    <!--    &lt;!&ndash;    android:layout_marginBottom="16dp"&ndash;&gt;-->
+    <!--    <com.example.firebaseupload.views.MyButton-->
+    <!--        android:id="@+id/camera_button"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignBaseline="@+id/button_upload"-->
+    <!--        android:layout_alignBottom="@+id/button_upload"-->
+    <!--        android:text="@string/camera"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_toStartOf="@id/dummy"-->
+    <!--        android:visibility="invisible"-->
+    <!--        android:enabled="false"/>-->
+
+    <!--&lt;!&ndash;    <androidx.viewpager.widget.ViewPager&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="match_parent" />&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_toStartOf="@+id/button_upload"&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;        android:layout_marginStart="25dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_toEndOf="@+id/button_upload"&ndash;&gt;-->
+
+

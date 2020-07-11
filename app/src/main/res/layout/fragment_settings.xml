@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".SettingsFragment">
+
+
+    <Switch
+        android:id="@+id/language_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="sa"
+
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/information_button"
+        android:layout_marginBottom="100dp" />
+
+    <com.example.firebaseupload.views.MyButton
+        android:id="@+id/information_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="@string/manual"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/language_switch"
+        android:layout_above="@id/information_button"
+        android:layout_marginBottom="100dp"
+        android:text="@string/custom"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/language_switch"
+        android:layout_above="@id/information_button"
+        android:layout_marginBottom="100dp"
+        android:text="@string/english"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

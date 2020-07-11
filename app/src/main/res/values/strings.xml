@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VIRTUAL EYE++</string>
+    <string name="upload">UPLOAD</string>
+    <string name="show_uploads">SHOW UPLOADS</string>
+    <string name="caption">CAPTION</string>
+    <string name="choose_file">CHOOSE FILE</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="camera">CAMERA</string>
+    <string name="generate_caption">GENERATE CAPTION</string>
+    <string name="caption_placeholder">CAPTION</string>
+    <string name="narrate">NARRATE</string>
+    <string name="take_picture">TAKE PICTURE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="information">Information</string>
+    <string name="english">English</string>
+    <string name="custom">Custom</string>
+    <string name="manual">MANUAL</string>
+    <string name="logo">logo</string>
+</resources>

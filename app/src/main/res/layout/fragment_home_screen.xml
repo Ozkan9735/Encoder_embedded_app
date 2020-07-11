@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="@drawable/background_color"
+    android:id="@+id/home_fragment"
+    tools:context=".MainActivity">
+    <!--    android:padding="16dp"-->
+    <!--    android:background="@color/blue_background"-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button_choose_image"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/choose_file" />  -->
+
+    <com.example.firebaseupload.views.MyButton
+        android:id="@+id/button_choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_toStartOf="@id/dummy"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/choose_file" />
+
+    <TextView
+        android:id="@+id/elapsed_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/caption_text_file_name"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        tools:text="Elapsed Time"
+        android:textColor="@color/caption_text_color" />
+
+    <TextView
+        android:id="@+id/caption_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/button_upload"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:text="@string/caption"
+        android:textColor="@color/caption_text_color" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:contentDescription="@string/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_choose_image"
+
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/caption_text_file_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="200dp"/>
+
+    <Button
+        android:id="@+id/image_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:text="@string/narrate"
+        android:layout_below="@+id/button_choose_image"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/caption_text_file_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="200dp" />
+    <ImageView
+        android:id="@+id/narrate_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_choose_image"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@id/image_button"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/ic_narrate_logo_black_24dp"/>
+    <!--    android:visibility="invisible"-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button_upload"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:text="@string/upload" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/camera_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignBaseline="@+id/button_upload"-->
+    <!--        android:layout_alignBottom="@+id/button_upload"-->
+    <!--        android:layout_marginStart="25dp"-->
+    <!--        android:layout_toEndOf="@+id/button_upload"-->
+    <!--        android:text="@string/camera"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:gravity="center"/>-->
+
+
+    <Space
+        android:id="@+id/dummy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+
+    <com.example.firebaseupload.views.MyButton
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@id/dummy"
+        android:text="@string/generate_caption"
+
+        />
+    <!--    android:layout_marginBottom="16dp"-->
+    <com.example.firebaseupload.views.MyButton
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_upload"
+        android:layout_alignBottom="@+id/button_upload"
+        android:text="@string/camera"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_toStartOf="@id/dummy"
+        android:visibility="invisible"
+        android:enabled="false" />
+    <!--    android:visibility="invisible"-->
+    <!--    android:enabled="false"-->
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+    <!--        android:layout_toStartOf="@+id/button_upload"-->
+
+    <!--        android:layout_marginStart="25dp"-->
+    <!--        android:layout_toEndOf="@+id/button_upload"-->
+
+
+</RelativeLayout>
